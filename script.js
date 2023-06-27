@@ -18,19 +18,19 @@ function playGame() {
     //Alerts display user choice and computer choice
     window.alert(`You chose ${userChoice}.`);
     window.alert(`The computer chose ${computerChoice}.`);
-    //If both choices are the same, alert states it's a tie.
+    //If both choices are the same, alert states it's a tie and the tie value increments by 1.
     if (userChoice === computerChoice) {
         window.alert("It's a tie!");
         ties++;
     } else if (
-        //The else if selector outlines all three victory scenarios and presents a victory alert if any condition is met
+        //The else if selector outlines all three victory scenarios and presents a victory alert if any condition is met as well as increments the win value
         (userChoice === "rock" && computerChoice === "scissors") ||
         (userChoice === "paper" && computerChoice === "rock") ||
         (userChoice === "scissors" && computerChoice === "paper")
     ) {
         window.alert("Hooray! You won!");
         wins++;
-        //If any other conditions occur, then the user loses and gets a loss alert.
+        //If any other conditions occur, then the user loses, the loss value increments by 1, and the user gets a loss alert.
     } else {
         window.alert("Aw, you lost!");
         losses++;
