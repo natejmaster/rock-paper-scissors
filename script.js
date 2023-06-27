@@ -1,4 +1,4 @@
-//Declares three variables with each value initially set to 0. These will update as the player plays more games.
+//Declares three variables (wins, losses, ties) with each value initially set to 0. These will update as the player plays more games.
 let wins = 0;
 let losses = 0;
 let ties = 0;
