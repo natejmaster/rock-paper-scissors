@@ -36,7 +36,7 @@ function playGame() {
         losses++;
     }
     //Sends an alert with the current user stats--wins, losses, and ties
-    window.alert("Current Stats--- Wins:" + wins + " Losses: " + losses + " Ties: " + ties)
+    window.alert("Current Stats--- Wins: " + wins + " Losses: " + losses + " Ties: " + ties)
 //Create an alert that offers the chance to play again
     if (window.confirm("Would you like to play again?")) {
         playGame();
