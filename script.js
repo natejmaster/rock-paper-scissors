@@ -8,7 +8,7 @@ function playGame() {
     let choices = ["rock", "paper", "scissors"]
     //Lets user pick choices with a window prompt.
     let userChoice = window.prompt("Choose rock, paper, or scissors")
-    //Computer chooses by selecting index of 0, 1, or 2 with Math.floor and Math.random * 3
+    //Computer chooses by selecting index of 0, 1, or 2 with Math.floor and Math.random * 3 (because there are three choices in the array)
     let computerChoice = choices[Math.floor(Math.random() * 3)]
     //Computer has a message to send to user if they don't choose rock, paper, or scissors
     if (!choices.includes(userChoice)) {
